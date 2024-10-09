@@ -206,12 +206,12 @@ def clear_logs_command(message):
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     markup = ReplyKeyboardMarkup(row_width=2, resize_keyboard=True, one_time_keyboard=True)
-    btn1 = KeyboardButton("/bgmi❤️‍🔥")
-    btn2 = KeyboardButton("/help😺")
-    btn3 = KeyboardButton("/rules💥")
-    btn4 = KeyboardButton("/myinfo🥰")
-    btn5 = KeyboardButton("/plan🌹")
-    btn6 = KeyboardButton("/Owner🤗")
+    btn1 = KeyboardButton("/bgmi ❤️‍🔥")
+    btn2 = KeyboardButton("/help 😺")
+    btn3 = KeyboardButton("/rules 💥")
+    btn4 = KeyboardButton("/myinfo 🥰")
+    btn5 = KeyboardButton("/plan 🌹")
+    btn6 = KeyboardButton("/Owner 🤗")
     markup.add(btn1, btn2, btn3, btn4, btn5, btn6)
     bot.send_message(message.chat.id, "*Choose an option:*", reply_markup=markup, parse_mode='Markdown')
     
